@@ -1,0 +1,7 @@
+deepeval==2.8.8
+langchain==0.3.25
+langchain_core==0.3.59
+langchain_openai==0.3.16
+python-dotenv==1.1.0
+streamlit==1.37.1
+streamlit==1.45.0
