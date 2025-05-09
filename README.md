@@ -13,7 +13,7 @@ sharikjavid-pdf_chat/
 ├── config.py               # Application configuration and validation
 ├── eval.py                 # DeepEval-based evaluation script
 ├── requirements.txt        # Python dependencies
-├── vector_loader.py        # (unused placeholder)
+├── vector_loader.py        # injection pipline
 ├── rag_components/         # RAG pipeline components
 │   ├── document_parser.py  # Parse raw docs into text/images
 │   ├── prompt_builder.py   # Construct LLM prompts
