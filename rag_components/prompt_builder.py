@@ -13,7 +13,7 @@ class PromptBuilder:
             for text_element in context_docs["texts"]:
                 if isinstance(text_element, Document):
                     context_text += text_element.page_content + "\n\n"
-                else: # Should not happen if parse_docs works correctly
+                else: 
                     context_text += str(text_element) + "\n\n"
 
         prompt_template_text = generation_template.format(
@@ -24,7 +24,6 @@ class PromptBuilder:
         prompt_content = [{"type": "text", "text": prompt_template_text}]
 
         if context_docs.get("images"):
-            # print(f"[DEBUG] prompt_builder.py: Adding {len(context_docs['images'])} images to prompt.")
             for image_b64 in context_docs["images"]:
                 prompt_content.append(
                     {
